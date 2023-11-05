@@ -18,7 +18,11 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav" 
+        style="background-color: rgba(0, 0, 0, 0.7);
+               backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-bottom: 2px solid #cb6603;">
             <div class="container">
                 <a class="navbar-brand" href="#page-top">Inicio</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,30 +31,61 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portafolio</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Acerca de mi</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portafolio</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contacto</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
+        <header class="masthead bg-primary text-white text-center" style="background-image:url(assets/img/portfolio/background.webp) ;background-size: cover; height: 800px; background-position: center;">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/portfolio/craos.webp" alt="..." />
+                <img class="masthead-avatar " src="assets/img/portfolio/craos.webp" alt="..." style=" width: 350px; margin-top: -80px; border-radius: 20%;border:2px solid #cb6603 ;" />
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Cristhian Villanueva</h1>
+        
+                <h1 class="masthead-heading text-uppercase mb-0">Cristhian Villanueva</h1>    
+                
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fa-solid fa-diamond"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- MastheadCristhian Villanueva Subheading-->
+                <div class="typewriter">
+                  <p class="masthead-subheading font-weight-light mb-0">Freelancer </p>  
+                  <p class="masthead-subheading font-weight-light mb-0">Desarrollador Web </p>  
+                </div>
+            </div>
+        </header>
+        <!-- About Section-->
+        <section class="page-section text-black mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-black">Acerca de Mi</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- MastheadCristhian Villanueva Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Desarrollador de Aplicaciones Web </p>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">¡Hola! Soy Cristhian Villanueva, un apasionado desarrollador web con experiencia en PHP, Bootstrap y MySQL. Mi enfoque es crear aplicaciones web efectivas y visualmente atractivas.
+                    </p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Mi trayectoria como Jr. incluye una amplia variedad de proyectos, desde sitios informativos hasta aplicaciones dinámicas. Si buscas un colaborador confiable para tu proyecto web, ¡estoy listo para convertir tus ideas en realidad!</p></div>
+                </div>
+                <!-- About Section Button-->
+                <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="#">
+                        <i class="fas fa-download me-2"></i>
+                        Descargar CV
+                    </a>
+                </div>
             </div>
-        </header>
+        </section>
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
@@ -95,32 +130,7 @@
                 </div>
             </div>
         </section>
-        <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Acerca de Mi</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">¡Hola! Soy Cristhian Villanueva, un apasionado desarrollador web con experiencia en PHP, Bootstrap y MySQL. Mi enfoque es crear aplicaciones web efectivas y visualmente atractivas.
-                    </p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">Mi trayectoria como Jr. incluye una amplia variedad de proyectos, desde sitios informativos hasta aplicaciones dinámicas. Si buscas un colaborador confiable para tu proyecto web, ¡estoy listo para convertir tus ideas en realidad!</p></div>
-                </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="#">
-                        <i class="fas fa-download me-2"></i>
-                        Descargar CV
-                    </a>
-                </div>
-            </div>
-        </section>
+        
         <!-- Contact Section-->
         <section class="page-section" id="contact">
             <div class="container">
@@ -350,7 +360,7 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.lorem</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
