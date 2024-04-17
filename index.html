@@ -34,145 +34,147 @@
 
 	<nav class="navbar bg-dark border-bottom border-body navbar-expand-lg fixed-top" data-bs-theme="dark">
 		<div class="container-fluid ">
-			<a class="navbar-brand p-0" href="#"><img src="img/logowidth.webp" width="150"></a>
+			<a class="navbar-brand p-0" href="#main"><img src="img/logowidth.webp" width="150"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse justify-content-center fw-bold" id="navbarNav">
 			  <ul class="navbar-nav">
 			    <li class="nav-item">
-			      <a class="nav-link" href="#"><z id="about">About Us</z> <i class="fa-regular fa-star"></i></a>
+			      <a class="nav-link" href="#main"><z id="about">About Us</z> <i class="fa-regular fa-star"></i></a>
 			    </li>
 			    <li class="nav-item">
-			      <a class="nav-link" id="services" href="#">Services</a>
+			      <a class="nav-link" id="services" href="#offerServices">Services</a>
 			    </li>
 			    <li class="nav-item">
-			      <a class="nav-link" id="contact" href="#">Contact</a>
+			      <a class="nav-link" id="contact" href="#contactDown">Contact</a>
 			    </li>
 			  </ul>
 			</div>
 		</div>
 	</nav>
 
-	<div class="container py-5 mt-0">
-		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-12 p-4">
-				<div class="text-center " >
-					<img src="img/tittleLogo.webp" class="img-fluid mt-4" width="400">
-					<p id="text1">Custom Software Development</p>
+	<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+		<div class="container py-5 mt-0" id="main">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12 p-4">
+					<div class="text-center " >
+						<img src="img/tittleLogo.webp" class="img-fluid mt-4" width="400">
+						<p id="text1">Custom Software Development</p>
+					</div>
+					<div class="py-4 text-justify">
+						<p id="text2">At Craos-Dev we offer customized solutions for web and mobile applications, enterprise software and e-commerce. Our passion for quality and transparent communication sets us apart, ensuring exceptional results for our clients.</p>
+					</div>
+					<div class="">
+						<a href="" class="btn btn-lg btn-outline-light p-3" data-aos="flip-up"><i class="fa-solid fa-cat"></i><z id="contactUs"> Contact us</z></a>
+					</div>
 				</div>
-				<div class="py-4 text-justify">
-					<p id="text2">At Craos-Dev we offer customized solutions for web and mobile applications, enterprise software and e-commerce. Our passion for quality and transparent communication sets us apart, ensuring exceptional results for our clients.</p>
-				</div>
-				<div class="">
-					<a href="" class="btn btn-lg btn-outline-light p-3" data-aos="flip-up"><i class="fa-solid fa-cat"></i><z id="contactUs"> Contact us</z></a>
-				</div>
-			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 d-none d-lg-block d-md-block d-sm-none py-4">
-				<div class="text-center" data-aos="fade-left">
-					<img src="img/logo.webp" class="img-fluid" width="400">	
+				<div class="col-lg-6 col-md-6 col-sm-12 d-none d-lg-block d-md-block d-sm-none py-4">
+					<div class="text-center" data-aos="fade-left">
+						<img src="img/logo.webp" class="img-fluid" width="400">	
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div >
-		<img src="img/backSup.webp" class="w-100">
-	</div>
+		<div id="offerServices">
+			<img src="img/backSup.webp" class="w-100">
+		</div>
 
-	<div class="bg-white " style="margin-top: -10px;">
-		<div class="container">
-			<div class="text-dark" data-aos="fade-right">
-				<h3 class=""><i class="fa-solid fa-code"></i><z id="lblServices">Services</z></h3>
-				<h2 class="fw-bold" id="offer">What We Offer?</h2>
-			</div>
-			<div class="px-5 mx-2">
-				<div class="row justify-content-center">
-					<div class="col-lg-4 col-md-6 col-sm-10 col-xs-10 mt-custom" data-aos="flip-up">
-					  <div style="position: relative;" class="d-flex justify-content-center align-items-center">
-					    <div class="card rounded-0 rounded-top-5 rounded-start-5" style="position: relative; z-index: 0;">
-					      <div class="card-body">
-					        <h5 class="card-title mt-5 fw-bold my-3"><i class="fa-solid fa-table"></i><z id="tittle1"> CUSTOM CMS</z></h5>
-					        <p class="card-text text-justify fw-light" id="body1">Discover the power of a custom CMS. With our custom CMS development service, you get a tool designed exclusively for your content management needs. From blogs to complex websites, our CMS is completely tailored to your vision.</p>
-					      </div>
-					    </div>
-					    <img src="img/cms.webp" class="img-fluid position-absolute top-0 start-50 translate-middle d-none d-md-block" style="z-index: 1; margin-top: -90px; width: 300px;" alt="...">
-					    <img src="img/cms.webp" class="img-fluid position-absolute top-0 start-50 translate-middle d-md-none" style="z-index: 1; margin-top: -90px; width: 250px;" alt="...">
-					  </div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-10 col-xs-10 mt-custom" data-aos="flip-down">
-					  <div style="position: relative;" class="d-flex justify-content-center align-items-center">
-					    <div class="card rounded-0 rounded-top-5 rounded-start-5" style="position: relative; z-index: 0;">
-					      <div class="card-body">
-					        <h5 class="card-title mt-5 fw-bold my-3"><i class="fa-solid fa-display"></i><z id="tittle2"> RESPONSIVE DESIGN</z></h5>
-					        <p class="card-text fw-light" id="body2">With our focus on responsive design, you can be sure that your system will function optimally on any screen. Whether you need a complex web application or an enterprise system, our attention to detail ensures that every element fits the screen perfectly.</p>
-					      </div>
-					    </div>
-					    <img src="img/responsive.webp" class="img-fluid position-absolute top-0 start-50 translate-middle d-none d-md-block" style="z-index: 1; margin-top: -90px; width: 300px;" alt="...">
-					    <img src="img/responsive.webp" class="img-fluid position-absolute top-0 start-50 translate-middle d-md-none" style="z-index: 1; margin-top: -90px; width: 250px;" alt="...">
-					  </div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-10 col-xs-10 mt-custom" data-aos="flip-up">
-					  <div style="position: relative;" class="d-flex justify-content-center align-items-center">
-					    <div class="card rounded-0 rounded-top-5 rounded-start-5" style="position: relative; z-index: 0;">
-					      <div class="card-body">
-					        <h5 class="card-title mt-5 fw-bold my-3"><i class="fa-solid fa-gear"></i><z id="tittle3"> MAINTANCE AND SUPPORT</z></h5>
-					        <p class="card-text fw-light" id="body3">We make sure we understand your specific needs and provide solutions tailored to your individual requirements. Whether you need software updates, technical troubleshooting or strategic advice, we are here to help you every step of the way.</p>
-					      </div>
-					    </div>
-					    <img src="img/support.webp" class="img-fluid position-absolute top-0 start-50 translate-middle d-none d-md-block" style="z-index: 1; margin-top: -90px; width: 300px;" alt="...">
-					    <img src="img/support.webp" class="img-fluid position-absolute top-0 start-50 translate-middle d-md-none" style="z-index: 1; margin-top: -90px; width: 250px;" alt="...">
-					  </div>
+		<div class="bg-white " style="margin-top: -10px;">
+			<div class="container">
+				<div class="text-dark" data-aos="fade-right">
+					<h3 class=""><i class="fa-solid fa-code"></i><z id="lblServices">Services</z></h3>
+					<h2 class="fw-bold" id="offer">What We Offer?</h2>
+				</div>
+				<div class="px-5 mx-2">
+					<div class="row justify-content-center">
+						<div class="col-lg-4 col-md-6 col-sm-10 col-xs-10 mt-custom" data-aos="flip-up">
+						  <div style="position: relative;" class="d-flex justify-content-center align-items-center">
+						    <div class="card rounded-0 rounded-top-5 rounded-start-5" style="position: relative; z-index: 0;">
+						      <div class="card-body">
+						        <h5 class="card-title mt-5 fw-bold my-3"><i class="fa-solid fa-table"></i><z id="tittle1"> CUSTOM CMS</z></h5>
+						        <p class="card-text text-justify fw-light" id="body1">Discover the power of a custom CMS. With our custom CMS development service, you get a tool designed exclusively for your content management needs. From blogs to complex websites, our CMS is completely tailored to your vision.</p>
+						      </div>
+						    </div>
+						    <img src="img/cms.webp" class="img-fluid position-absolute top-0 start-50 translate-middle d-none d-md-block" style="z-index: 1; margin-top: -90px; width: 300px;" alt="...">
+						    <img src="img/cms.webp" class="img-fluid position-absolute top-0 start-50 translate-middle d-md-none" style="z-index: 1; margin-top: -90px; width: 250px;" alt="...">
+						  </div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-10 col-xs-10 mt-custom" data-aos="flip-down">
+						  <div style="position: relative;" class="d-flex justify-content-center align-items-center">
+						    <div class="card rounded-0 rounded-top-5 rounded-start-5" style="position: relative; z-index: 0;">
+						      <div class="card-body">
+						        <h5 class="card-title mt-5 fw-bold my-3"><i class="fa-solid fa-display"></i><z id="tittle2"> RESPONSIVE DESIGN</z></h5>
+						        <p class="card-text fw-light" id="body2">With our focus on responsive design, you can be sure that your system will function optimally on any screen. Whether you need a complex web application or an enterprise system, our attention to detail ensures that every element fits the screen perfectly.</p>
+						      </div>
+						    </div>
+						    <img src="img/responsive.webp" class="img-fluid position-absolute top-0 start-50 translate-middle d-none d-md-block" style="z-index: 1; margin-top: -90px; width: 300px;" alt="...">
+						    <img src="img/responsive.webp" class="img-fluid position-absolute top-0 start-50 translate-middle d-md-none" style="z-index: 1; margin-top: -90px; width: 250px;" alt="...">
+						  </div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-10 col-xs-10 mt-custom" data-aos="flip-up">
+						  <div style="position: relative;" class="d-flex justify-content-center align-items-center">
+						    <div class="card rounded-0 rounded-top-5 rounded-start-5" style="position: relative; z-index: 0;">
+						      <div class="card-body">
+						        <h5 class="card-title mt-5 fw-bold my-3"><i class="fa-solid fa-gear"></i><z id="tittle3"> MAINTANCE AND SUPPORT</z></h5>
+						        <p class="card-text fw-light" id="body3">We make sure we understand your specific needs and provide solutions tailored to your individual requirements. Whether you need software updates, technical troubleshooting or strategic advice, we are here to help you every step of the way.</p>
+						      </div>
+						    </div>
+						    <img src="img/support.webp" class="img-fluid position-absolute top-0 start-50 translate-middle d-none d-md-block" style="z-index: 1; margin-top: -90px; width: 300px;" alt="...">
+						    <img src="img/support.webp" class="img-fluid position-absolute top-0 start-50 translate-middle d-md-none" style="z-index: 1; margin-top: -90px; width: 250px;" alt="...">
+						  </div>
+						</div>
 					</div>
 				</div>
-			</div>
-				
+					
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="py-4 bg-white">
-		
-	</div>
+		<div class="py-4 bg-white">
+			
+		</div>
 
-	<div class="bg-dark">
-		<div class="container py-5">
+		<div class="bg-dark">
+			<div class="container py-5">
 
-			<div class="text-center" data-aos="zoom-in">
-				<h2 class="fw-bold"><z id="contactDown">Contact With Us </z><i class="fa-solid fa-headset"></i></h2>
-				<p id="textContact">Contact us by email or whatsapp to clarify any doubts you may have and to receive your valuable suggestions. We look forward to meeting you and understanding your needs.</p>
-			</div>
-
-			<div class="row border rounded-2 bg-white p-5" data-aos="flip-left">
-				<div class="col-lg-8 col-md-7 col-sm-12">
-					<div>
-						<div class="input-group mb-3">
-						  <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
-						  <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
-						</div>
-						<div class="input-group mb-3">
-						  <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"></i></span>
-						  <input type="mail" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
-						</div>
-					</div>
-					<div class="input-group">
-					  <span class="input-group-text" id="message">Message</span>
-					  <textarea class="form-control" aria-label="With textarea"></textarea>
-					</div>
-					<button class="btn btn-dark my-2 float-end px-3" ><i class="fa-solid fa-paper-plane"></i> <z id="btnSend">Send</z></button>
+				<div class="text-center" data-aos="zoom-in">
+					<h2 class="fw-bold"><z id="contactDown">Contact With Us </z><i class="fa-solid fa-headset"></i></h2>
+					<p id="textContact">Contact us by email or whatsapp to clarify any doubts you may have and to receive your valuable suggestions. We look forward to meeting you and understanding your needs.</p>
 				</div>
-				<div class="col-lg-4 col-md-5 col-sm-12">
-					<div class="text-center text-dark fw-bold">
-						<i class="fa-solid fa-location-dot"></i>
-						<p>La Paz - Bolivia</p>
-						<i class="fa-solid fa-phone"></i>
-						<p>+591 60160922</p>
-						<i class="fa-solid fa-envelope"></i>
-						<p>villanuevacristhian656@gmail.com</p>
+
+				<div class="row border rounded-2 bg-white p-5" data-aos="flip-left">
+					<div class="col-lg-8 col-md-7 col-sm-12">
+						<div>
+							<div class="input-group mb-3">
+							  <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
+							  <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+							</div>
+							<div class="input-group mb-3">
+							  <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"></i></span>
+							  <input type="mail" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+							</div>
+						</div>
+						<div class="input-group">
+						  <span class="input-group-text" id="message">Message</span>
+						  <textarea class="form-control" aria-label="With textarea"></textarea>
+						</div>
+						<button class="btn btn-dark my-2 float-end px-3" ><i class="fa-solid fa-paper-plane"></i> <z id="btnSend">Send</z></button>
+					</div>
+					<div class="col-lg-4 col-md-5 col-sm-12">
+						<div class="text-center text-dark fw-bold">
+							<i class="fa-solid fa-location-dot"></i>
+							<p>La Paz - Bolivia</p>
+							<i class="fa-solid fa-phone"></i>
+							<p>+591 60160922</p>
+							<i class="fa-solid fa-envelope"></i>
+							<p>villanuevacristhian656@gmail.com</p>
+						</div>
 					</div>
 				</div>
-			</div>
 
+			</div>
 		</div>
 	</div>
 
