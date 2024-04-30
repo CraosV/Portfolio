@@ -30,8 +30,8 @@
     about.innerText = "Acerca De Nosotros";
     services.innerText = "Servicios";
     contact.innerText = "Contacto";
-    text1.innerText = "Desarrollo de software a medida";
-    text2.innerText = "En Craos-Dev ofrecemos soluciones personalizadas para aplicaciones web y móviles, software empresarial y comercio electrónico. Nuestra pasión por la calidad y la comunicación transparente nos diferencia, garantizando resultados excepcionales para nuestros clientes.";
+    text1.innerText = "Desarrollo de Software a Medida";
+    text2.innerText = "Ofrecemos soluciones personalizadas para aplicaciones web y móviles, software empresarial y comercio electrónico. Nuestra pasión por la calidad y la comunicación transparente nos diferencia, garantizando resultados excepcionales para nuestros clientes.";
     contactUs.innerText = " Contáctenos";
     lblServices.innerText = " Servicios";
     offer.innerText = "Qué Ofrecemos?"

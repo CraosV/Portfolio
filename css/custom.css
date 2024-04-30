@@ -1,8 +1,13 @@
 .text-justify
 {
 	text-align: justify;
-	word-spacing: -1px;
+	word-spacing: -3px; 
+  word-spacing: -0.2em;
 }
 .mt-custom {
   margin-top: 220px; /* Ajusta este valor según tus necesidades */
+}
+.font-lg{
+	font-size: 35px;
+
 }
