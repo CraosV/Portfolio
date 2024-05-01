@@ -7,8 +7,8 @@ body{
   position: absolute;
   content: '';
   width: 100vw; /* 100% del ancho del viewport */
-  height: 100vh; /* 100% de la altura del viewport */
-  top: 50%;
+  height: 120vh; /* 120% de la altura del viewport */
+  top: 50%; /* Establecer la parte superior como automática */
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   filter: blur(0);
