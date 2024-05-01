@@ -2,6 +2,7 @@ body{
   width: 100vw; /* Ancho del viewport */
   height: 100vh; /* Altura del viewport */
   overflow-x: hidden; /* Para asegurar que no haya desbordamiento */}
+  
 .box:before {
   z-index: -1;
   position: absolute;
