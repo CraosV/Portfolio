@@ -150,18 +150,18 @@
 						<div>
 							<div class="input-group mb-3">
 							  <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
-							  <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+							  <input type="text" class="form-control" id="name" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
 							</div>
 							<div class="input-group mb-3">
 							  <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"></i></span>
-							  <input type="mail" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+							  <input type="mail" class="form-control" id="mail" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
 							</div>
 						</div>
 						<div class="input-group">
-						  <span class="input-group-text" id="message">Message</span>
-						  <textarea class="form-control" aria-label="With textarea"></textarea>
+						  <span class="input-group-text">Message</span>
+						  <textarea class="form-control" id="message" aria-label="With textarea"></textarea>
 						</div>
-						<button class="btn btn-dark my-2 float-end px-3" ><i class="fa-solid fa-paper-plane"></i> <z id="btnSend">Send</z></button>
+						<button class="btn btn-dark my-2 float-end px-3" onclick="msg();" ><i class="fa-solid fa-paper-plane"></i> <z id="btnSend">Send</z></button>
 					</div>
 					<div class="col-lg-4 col-md-5 col-sm-12">
 						<div class="text-center text-dark fw-bold">

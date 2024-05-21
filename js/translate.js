@@ -51,3 +51,18 @@
     /* footer */
     rigthsR.innerText = "Todos Los Derechos Reservados";
   });
+
+  function msg()
+  {
+    var name = document.getElementById("name").value;
+    var mail = document.getElementById("mail").value;
+    var message = document.getElementById("message").value;
+
+    var encodedText1 = encodeURIComponent(name);
+    var encodedText2 = encodeURIComponent(mail);
+    var encodedText3 = encodeURIComponent(message);
+
+    var url =`https://wa.me/59160160922?text=*Nombres:*%20${encodedText1}%0A*Correo:*%20${encodedText2}%0A*Mensaje:*%20${encodedText3}`;
+    window.open(url, '_blank');
+
+  }
