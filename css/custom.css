@@ -1,8 +1,16 @@
+body
+{
+	width: 100vw; /* Ancho del viewport */
+  height: 100vh; /* Altura del viewport */
+  overflow-x: hidden; /* Para asegurar que no haya desbordamiento */
+}
+
 .text-justify
 {
 text-align: justify;
   word-spacing: -0.2em;
   letter-spacing: 0.025em;
+  word-break: break-word;
 }
 .mt-custom {
   margin-top: 220px; /* Ajusta este valor según tus necesidades */
