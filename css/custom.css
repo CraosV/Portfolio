@@ -3,6 +3,7 @@ body
 	width: 100vw; /* Ancho del viewport */
   height: 100vh; /* Altura del viewport */
   overflow-x: hidden; /* Para asegurar que no haya desbordamiento */
+  font-weight: lighter;
 }
 
 .text-justify

@@ -1,8 +1,8 @@
 
-  document.addEventListener('DOMContentLoaded', function() {
-    var miModal = new bootstrap.Modal(document.getElementById('staticBackdrop'));
-    miModal.show();
-  }); 
+  // document.addEventListener('DOMContentLoaded', function() {
+  //   var miModal = new bootstrap.Modal(document.getElementById('staticBackdrop'));
+  //   miModal.show();
+  // }); 
 
   var btnSpanish =document.getElementById("btnSpanish");
   var about = document.getElementById("about");
