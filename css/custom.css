@@ -16,3 +16,29 @@ text-align: justify;
 .mt-custom {
   margin-top: 220px; /* Ajusta este valor según tus necesidades */
 }
+
+.parallax {
+  background-image: url('../img/background.png');
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+}
+.parallax2 {
+  background-image: url('../img/background2.png');
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.content {
+  height: 100vh;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional for better text readability */
+
+}
