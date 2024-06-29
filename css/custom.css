@@ -18,7 +18,7 @@ text-align: justify;
 }
 
 .parallax {
-  background-image: url('../img/background.png');
+  background-image: url('../img/back1.png');
   height: 100vh;
   background-attachment: fixed;
   background-position: top;
@@ -28,7 +28,7 @@ text-align: justify;
   
 }
 .parallax2 {
-  background-image: url('../img/background2.png');
+  background-image: url('../img/back2.png');
   height: 100vh;
   background-attachment: fixed;
   background-position: top;
@@ -39,6 +39,6 @@ text-align: justify;
 .content {
   height: 100vh;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5); /* Optional for better text readability */
+  background-color: rgba(0, 0, 0, 0.8); /* Optional for better text readability */
 
 }
