@@ -8,9 +8,7 @@ body
 
 .text-justify
 {
-  text-align: justify;
-  text-justify: inter-word;
-  letter-spacing: -0.4px;
+  
 }
 .mt-custom {
   margin-top: 220px; /* Ajusta este valor según tus necesidades */
