@@ -8,10 +8,9 @@ body
 
 .text-justify
 {
-text-align: justify;
-  word-spacing: -0.2em;
-  letter-spacing: 0.025em;
-  word-break: break-word;
+  text-align: justify;
+  text-justify: inter-word;
+  letter-spacing: -0.4px;
 }
 .mt-custom {
   margin-top: 220px; /* Ajusta este valor según tus necesidades */
@@ -19,7 +18,6 @@ text-align: justify;
 
 .parallax {
   background-image: url('../img/back1.png');
-  height: 100vh;
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
@@ -29,7 +27,6 @@ text-align: justify;
 }
 .parallax2 {
   background-image: url('../img/back2.png');
-  height: 100vh;
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
@@ -37,8 +34,17 @@ text-align: justify;
   
 }
 .content {
-  height: 100vh;
+
   color: white;
   background-color: rgba(0, 0, 0, 0.8); /* Optional for better text readability */
 
+}
+
+.carousel-item {
+  transition: transform 2.6s ease-in-out;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 0s 2.6s;
 }
