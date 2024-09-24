@@ -1,14 +1,7 @@
 body
 {
-	width: 100vw; /* Ancho del viewport */
-  height: 100vh; /* Altura del viewport */
+	
   overflow-x: hidden; /* Para asegurar que no haya desbordamiento */
-  font-weight: lighter;
-}
-
-
-.mt-custom {
-  margin-top: 220px; /* Ajusta este valor según tus necesidades */
 }
 
 .parallax {
@@ -28,12 +21,7 @@ body
   background-size: cover;
   
 }
-.content {
 
-  color: white;
-  background-color: rgba(0, 0, 0, 0.8); /* Optional for better text readability */
-
-}
 
 .carousel-item {
   transition: transform 2.6s ease-in-out;
@@ -42,4 +30,28 @@ body
 .carousel-fade .active.carousel-item-start,
 .carousel-fade .active.carousel-item-end {
   transition: opacity 0s 2.6s;
+}
+
+.button-styled{
+  border-width: thin;
+  border-style: solid;
+  border-color: #084686;
+  transition: border 0.3s ease, box-shadow 0.3s ease !important;
+}
+.button-styled:hover{
+  border: 0.1px solid #005EB7;
+  box-shadow: 0 0 5px rgb(0, 140, 255), 0 0 10px rgba(0, 255, 255, 0.8);
+}
+.nav-li
+{
+  color: #85B7F6 !important;
+  font-weight:100;
+  border-radius: 10px;
+}
+.nav-li:hover
+{
+  border-radius: 10px;
+  background-color: #0C3059;
+  color: #ffffff !important;
+  font-weight:100;
 }

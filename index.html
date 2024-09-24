@@ -14,78 +14,74 @@
 	sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
-<body data-bs-theme="dark">
+<style>
 	
-	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-body">
-	      	<div class="text-center">
-	      		<h2><i class="fa-solid fa-globe"></i> Select your Language</h2>
-	      		<img src="img/language.webp" class="img-fluid" style="max-width: 300px;">
-	      	</div>
-	      	<div class="text-center">
-	      		<button type="button" id="btnEnglish" class="btn btn-outline-light p-3 mx-3" data-bs-dismiss="modal"><i class="fa-solid fa-language"></i> English</button>
-	        	<button type="button" id="btnSpanish" class="btn btn-outline-light p-3" data-bs-dismiss="modal"><i class="fa-solid fa-language"></i> Spanish</button>	
-	      	</div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
 
-	<nav class="navbar bg-dark navbar-expand-lg  fixed-top" data-bs-theme="dark">
-		<div class="container">
-			<a class="navbar-brand" href="#main"><img src="img/logowidth.png" width="120"></a>
+	/* Estilo inicial del navbar */
+	.navbar {
+		background-color: transparent;
+		transition: background-color 0.3s ease; /* Transición suave */
+	}
+
+	/* Estilo del navbar al hacer scroll */
+	.navbar.scrolled {
+		background-color: rgba(0, 0, 0, 0.8);
+		border-bottom: 1px solid #0A386B;
+		 
+	}
+</style>
+<body data-bs-theme="dark">
+
+	<nav class="navbar navbar-expand-lg  fixed-top" data-bs-theme="dark">
+		
+			<a class="navbar-brand px-3" href="#main"><img src="img/logowidth.png" width="80"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse justify-content-end fw-bold" id="navbarNav">
-			  <ul class="navbar-nav">
+			  <ul class="navbar-nav px-3">
 			    <li class="nav-item">
-			      	<a class="nav-link fw-light" href="#main"><z id="about"><i class="fa-regular fa-building"></i> Nosotros</z></a>
+			      	<a class="nav-link nav-li" href="#main"><i class="fa-regular fa-building"></i> Nosotros</a>
 			    </li>
 			    <li class="nav-item">
-			      	<a class="nav-link fw-light" id="services" href="#offerServices"><i class="fa-solid fa-laptop"></i> Servicios</a>
+			      	<a class="nav-link nav-li" id="services" href="#offerServices"><i class="fa-solid fa-laptop"></i> Servicios</a>
 			    </li>
-				<!-- <li class="nav-item">
-					<a class="nav-link fw-light" id="services" href="#offerServices"><i class="fa-solid fa-shop"></i> Catalogo</a>
-				</li> -->
 			    <li class="nav-item">
-			      	<a class="nav-link fw-light" id="contact" href="#contactDown"><i class="fa-regular fa-address-book"></i> Contacto</a>
+			      	<a class="nav-link nav-li" id="contact" href="#contactDown"><i class="fa-regular fa-address-book"></i> Contacto</a>
 			    </li>
 			  </ul>
 			</div>
-		</div>
+		
 	</nav>
 
 	<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true" class="scrollspy-example " tabindex="0">
-		<div class="parallax">
+		<div class="" style="background: linear-gradient(to bottom, #091F3A, #000000); ">
 			<div class="content p-2">
 				<div class="container mt-5" id="main">
 					<div class="row mt-4">
 						<div class="col-lg-6 col-md-6 col-sm-12 ">
 							<div class="text-center mt-5" >
 								<img src="img/tittleLogo.webp" class="img-fluid mt-4" width="400">
-								<p id="text1" class="fs-1 fw-light">Desarrollo de Software Personalizado</p>
+								<p  class="fs-1 fw-light">Desarrollo de Software Personalizado</p>
 							</div>
 							<div class=" text-justify fs-5 p-2">
-								<p id="text2">Ofrecemos soluciones personalizadas para aplicaciones web y móviles.</p>
+								<p class="fw-light">Ofrecemos soluciones personalizadas para aplicaciones web y móviles.</p>
 							</div>
 							<div class="row g-1">
 								<div class="col-lg-6 col-12">
-									<a href="https://wa.me/59160160922?text=Hi%20im%20interested%20in%20your%20services." target="_blank" class="btn btn-lg btn-outline-light py-3 w-100 fw-light" data-aos="flip-up"><i class="fa-solid fa-cat"></i><z id="contactUs">Contáctanos</z></a>
+									<a href="https://wa.me/59160160922?text=Hi%20im%20interested%20in%20your%20services." target="_blank" class="btn btn-lg bg-primary-subtle py-3 w-100 fw-light button-styled" data-aos="flip-up"><i class="fa-solid fa-cat"></i><z id="contactUs">Contáctanos</z></a>
 								</div>
 								<div class="col-lg-3 col-6">
-									<a href="https://wa.me/59160160922?text=Hi%20im%20interested%20in%20your%20services." target="_blank" class="btn btn-lg btn-outline-light w-100 py-3 fw-light" data-aos="flip-up"><i class="fab fa-fw fa-facebook-f"></i></a>
+									<a href="https://wa.me/59160160922?text=Hi%20im%20interested%20in%20your%20services." target="_blank" class="btn btn-lg bg-primary-subtle w-100 py-3 fw-light button-styled" data-aos="flip-up"><i class="fab fa-fw fa-facebook-f"></i></a>
 								</div>
 								<div class="col-lg-3 col-6">
-									<a href="https://wa.me/59160160922?text=Hi%20im%20interested%20in%20your%20services." target="_blank" class="btn btn-lg btn-outline-light w-100 py-3 fw-light" data-aos="flip-up"><i class="fa-brands fa-github"></i></a>
+									<a href="https://wa.me/59160160922?text=Hi%20im%20interested%20in%20your%20services." target="_blank" class="btn btn-lg bg-primary-subtle w-100 py-3 fw-light button-styled" data-aos="flip-up"><i class="fa-brands fa-github"></i></a>
 								</div>
 								<div class="col-lg-3 col-6">
-									<a href="https://wa.me/59160160922?text=Hi%20im%20interested%20in%20your%20services." target="_blank" class="btn btn-lg btn-outline-light w-100 py-3 fw-light" data-aos="flip-up"><i class="fa-brands fa-linkedin-in"></i></a>
+									<a href="https://wa.me/59160160922?text=Hi%20im%20interested%20in%20your%20services." target="_blank" class="btn btn-lg bg-primary-subtle w-100 py-3 fw-light button-styled" data-aos="flip-up"><i class="fa-brands fa-linkedin-in"></i></a>
 								</div>
 								<div class="col-lg-3 col-6">
-									<a href="https://wa.me/59160160922?text=Hi%20im%20interested%20in%20your%20services." target="_blank" class="btn btn-lg btn-outline-light w-100 py-3 fw-light" data-aos="flip-up"><i class="fab fa-fw fa-whatsapp"></i></a>
+									<a href="https://wa.me/59160160922?text=Hi%20im%20interested%20in%20your%20services." target="_blank" class="btn btn-lg bg-primary-subtle w-100 py-3 fw-light button-styled" data-aos="flip-up"><i class="fab fa-fw fa-whatsapp"></i></a>
 								</div>
 							</div>					
 						</div>
@@ -101,50 +97,47 @@
 		</div>
 		
 
-		<div class="bg-white py-2 rounded-top-5">
-			<div class="container" id="offerServices">
+		<div class="bg-black py-2">
+			<div class="container">
 				<div class="text-dark my-3" data-aos="fade-right">
-					<h3 class=""><i class="fa-solid fa-code"></i><z id="lblServices">Servicios</z></h3>
-					<h2 class="fw-bold" id="offer">¿Qué ofrecemos?</h2>
+					<h3 class="" style="color: #85B7F6;"><i class="fa-solid fa-code"></i>Servicios</h3>
+					<h2 class="fw-bold text-white">¿Qué ofrecemos?</h2>
 				</div>
-				<div class="px-3">
+				<div>
 					<div class="row justify-content-center">
-						<div class="col-lg-4 col-md-6 col-sm-10 col-xs-10 mt-custom" data-aos="flip-up">
+						
+						<div class="col-lg-4 col-md-6 col-sm-10 col-xs-10 my-2" data-aos="flip-up">
 						  <div style="position: relative;" class="d-flex justify-content-center align-items-center">
-						    <div class="card rounded-0 rounded-top-5 rounded-start-5" style="position: relative; z-index: 0;">
+						    <div class="card rounded-3 bg-primary-subtle button-styled " style="position: relative; z-index: 0;">
 						      <div class="card-body" style="height:230px;">
-						        <h5 class="card-title mt-5 fw-bold my-3"><i class="fa-solid fa-table"></i><z id="tittle1"> CMS PERSONALIZADO</z></h5>
+						        <h5 class="card-title mt-3 fw-bold" style="color: #85B7F6;"><i class="fa-solid fa-table"></i><z id="tittle1"> CMS PERSONALIZADO</z></h5>
 						        <p class="card-text text-justify fw-light" id="body1">Con nuestro servicio de desarrollo de CMS personalizados, obtendrá una herramienta diseñada exclusivamente para sus necesidades de gestión de contenidos.</p>
 						      </div>
-						    </div>
-						    <img src="img/cms.webp" class="img-fluid position-absolute top-0 start-50 translate-middle d-none d-md-block" style="z-index: 1; margin-top: -90px; width: 300px;" alt="...">
-						    <img src="img/cms.webp" class="img-fluid position-absolute top-0 start-50 translate-middle d-md-none" style="z-index: 1; margin-top: -90px; width: 250px;" alt="...">
+						    </div> 
 						  </div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-sm-10 col-xs-10 mt-custom" data-aos="flip-down" >
+
+						<div class="col-lg-4 col-md-6 col-sm-10 col-xs-10 my-2" data-aos="flip-down" >
 						  <div style="position: relative;" class="d-flex justify-content-center align-items-center">
-						    <div class="card rounded-0 rounded-top-5 rounded-start-5" style="position: relative; z-index: 0;">
+						    <div class="card rounded-3 bg-primary-subtle button-styled" style="position: relative; z-index: 0;">
 						      <div class="card-body" style="height:230px;">
-						        <h5 class="card-title mt-5 fw-bold my-3"><i class="fa-solid fa-display"></i><z id="tittle2"> DISEÑO ADAPTABLE</z></h5>
+						        <h5 class="card-title mt-3 fw-bold" style="color: #85B7F6;"><i class="fa-solid fa-display"></i><z id="tittle2"> DISEÑO ADAPTABLE</z></h5>
 						        <p class="card-text text-justify fw-light" id="body2">Con nuestro enfoque en el diseño responsivo, puede estar seguro de que su sistema funcionará de forma óptima en cualquier pantalla.</p>
 						      </div>
 						    </div>
-						    <img src="img/responsive.webp" class="img-fluid position-absolute top-0 start-50 translate-middle d-none d-md-block" style="z-index: 1; margin-top: -90px; width: 300px;" alt="...">
-						    <img src="img/responsive.webp" class="img-fluid position-absolute top-0 start-50 translate-middle d-md-none" style="z-index: 1; margin-top: -90px; width: 250px;" alt="...">
 						  </div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-sm-10 col-xs-10 mt-custom" data-aos="flip-up">
+
+						<div class="col-lg-4 col-md-6 col-sm-10 col-xs-10 my-2" data-aos="flip-up">
 						  <div style="position: relative;" class="d-flex justify-content-center align-items-center">
-						    <div class="card rounded-0 rounded-top-5 rounded-start-5" style="position: relative; z-index: 0;">
+						    <div class="card rounded-3 bg-primary-subtle button-styled" style="position: relative; z-index: 0;">
 						      <div class="card-body" style="height:230px;">
-						        <h5 class="card-title mt-5 fw-bold my-3"><i class="fa-solid fa-gear"></i><z id="tittle3"> MANTENIMIENTO Y SOPORTE</z></h5>
+						        <h5 class="card-title mt-3 fw-bold" style="color: #85B7F6;"><i class="fa-solid fa-gear"></i><z id="tittle3"> MANTENIMIENTO Y SOPORTE</z></h5>
 						        <p class="card-text text-justify fw-light" id="body3"> Resolución de problemas técnicos o asesoramiento estratégico, estamos aquí para ayudarle en todo momento.</p>
 						      </div>
-						    </div>
-						    <img src="img/support.webp" class="img-fluid position-absolute top-0 start-50 translate-middle d-none d-md-block" style="z-index: 1; margin-top: -90px; width: 300px;" alt="...">
-						    <img src="img/support.webp" class="img-fluid position-absolute top-0 start-50 translate-middle d-md-none" style="z-index: 1; margin-top: -90px; width: 250px;" alt="...">
-						  </div>
+						    </div>   
 						</div>
+
 					</div>
 				</div>
 					
@@ -152,39 +145,36 @@
 			</div>
 		</div>
 
-		<div class="py-4 bg-white">
-			
-		</div>
 
-		<div class="bg-dark">
+		<div class="bg-black">
 			<div class="parallax2">
-				<div class="content">
+				<div class="content px-2">
 					<div class="container py-5">
 						<div class="text-center" data-aos="zoom-in">
 							<h2 class="fw-bold"><z id="contactDown">Contacte Con Nosotros </z><i class="fa-solid fa-headset"></i></h2>
-							<p id="textContact">Contacte con nosotros por correo electrónico o whatsapp para aclarar cualquier duda que tenga. Esperamos conocerle y comprender sus necesidades.</p>
+							<p style="color: #85B7F6;">Contacte con nosotros por correo electrónico o whatsapp para aclarar cualquier duda que tenga. Esperamos conocerle y comprender sus necesidades.</p>
 						</div>
 		
-						<div class="row border rounded-2 bg-white p-2" data-aos="flip-left">
+						<div class="row  rounded-2 bg-primary-subtle p-2 button-styled" data-aos="flip-left">
 							<div class="col-lg-8 col-md-7 col-sm-12 my-3">
 								<div>
 									<div class="input-group mb-3">
-									  <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
-									  <input type="text" class="form-control" id="name" placeholder="Nombre" aria-label="Name" aria-describedby="basic-addon1">
+									  <span class="input-group-text bg-primary-subtle button-styled" ><i class="fa-solid fa-user"></i></span>
+									  <input type="text" class="form-control bg-primary-subtle button-styled" id="name" placeholder="Nombre" aria-label="Name" aria-describedby="basic-addon1">
 									</div>
 									<div class="input-group mb-3">
-									  <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"></i></span>
-									  <input type="mail" class="form-control" id="mail" placeholder="Correo" aria-label="Email" aria-describedby="basic-addon1">
+									  <span class="input-group-text bg-primary-subtle button-styled" ><i class="fa-solid fa-envelope"></i></span>
+									  <input type="mail" class="form-control bg-primary-subtle button-styled" id="mail" placeholder="Correo" aria-label="Email" aria-describedby="basic-addon1">
 									</div>
 								</div>
 								<div class="input-group">
-								  <span class="input-group-text">Mensaje</span>
-								  <textarea class="form-control" id="message" aria-label="With textarea"></textarea>
+								  <span class="input-group-text bg-primary-subtle button-styled">Mensaje</span>
+								  <textarea class="form-control bg-primary-subtle button-styled" id="message" aria-label="With textarea"></textarea>
 								</div>
-								<button class="btn btn-dark my-2 float-end px-3" onclick="msg();" ><i class="fa-solid fa-paper-plane"></i> <z id="btnSend">Enviar</z></button>
+								<button class="btn button-styled my-2 float-end px-3" onclick="msg();" ><i class="fa-solid fa-paper-plane"></i> <z id="btnSend">Enviar</z></button>
 							</div>
 							<div class="col-lg-4 col-md-5 col-sm-12">
-								<div class="text-center text-dark fw-bold">
+								<div class="text-center text-white fw-light">
 									<i class="fa-solid fa-location-dot"></i>
 									<p>La Paz - Bolivia</p>
 									<i class="fa-solid fa-phone"></i>
@@ -201,20 +191,21 @@
 		</div>
 	</div>
 
-		<footer class="footer text-center bg-white mt-auto py-4">
-		    <div class="container fw-bold">
-		      <div class="col-lg-12 mb-1 mb-lg-0">
-		        <a class="btn btn-outline-dark btn-social mx-1" href="" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
-		        <a class="btn btn-outline-dark btn-social mx-1" href="" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-		        <a class="btn btn-outline-dark btn-social mx-1" href="https://api.whatsapp.com/send?phone=60160922" target="_blank"><i class="fab fa-fw fa-whatsapp"></i></a>
-		        <a class="btn btn-outline-dark btn-social mx-1" href="" target="_blank"><i class="fa-brands fa-github"></i></a>
-		      </div>
-		    </div>
-		</footer>
-		<div class="copyright text-center bg-white text-dark">
-		    <div class="container"><small><z id="rigthsR">Todos los Derechos Reservados</z> &copy; Craos - Dev <i class="fa-solid fa-cat"></i></small></div>
-		    <small>2024</small>
+	<footer class="text-center mt-auto py-1" style="background: linear-gradient(to top, #091F3A, #000000); ">
+		<div class="container fw-bold">
+			<div class="col-lg-12 mb-1 mb-lg-0">
+			<a class="btn button-styled btn-social mx-1" href="" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
+			<a class="btn button-styled btn-social mx-1" href="" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+			<a class="btn button-styled btn-social mx-1" href="https://api.whatsapp.com/send?phone=60160922" target="_blank"><i class="fab fa-fw fa-whatsapp"></i></a>
+			<a class="btn button-styled btn-social mx-1" href="" target="_blank"><i class="fa-brands fa-github"></i></a>
+			</div>
 		</div>
+		<div class="copyright text-center text-white">
+			<div class="container"><small>Todos los Derechos Reservados &copy; Craos - Dev <i class="fa-solid fa-cat"></i></small></div>
+			<small>2024</small>
+		</div>
+	</footer>
+		
 		
 </body>
 
@@ -226,6 +217,17 @@
         easing: 'ease-in-cubic, ease-out-cubic, ease-in-out-cubic', // default easing for AOS animations
         once: false,    // whether animation should happen only once
     });
+</script>
+<script>
+	// Escuchar el evento de scroll
+	window.addEventListener('scroll', () => {
+		const navbar = document.querySelector('.navbar');
+		if (window.scrollY > 50) {
+			navbar.classList.add('scrolled'); // Agrega la clase 'scrolled'
+		} else {
+			navbar.classList.remove('scrolled'); // Remueve la clase 'scrolled'
+		}
+	});
 </script>
 <script src="js/translate.js"></script>
 </html>
